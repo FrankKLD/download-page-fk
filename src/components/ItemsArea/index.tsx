@@ -40,6 +40,7 @@ const ItemsArea: React.FC = () => {
         if (results) {
           let dataUser = results;
           setDataFinded(dataUser);
+          console.log(dataUser);
         }
       })
       .catch((err: any) => {
@@ -76,8 +77,8 @@ const ItemsArea: React.FC = () => {
               <ItemDetails>
                 <h3>{data.name}</h3>
                 <span>
-                  <strong>Abilities: </strong>
-                  {data.sprites}
+                  <strong>URL: </strong>
+                  {data.url}
                 </span>
                 <ItemDetailsButtonsContent>
                   <ItemButton type="button" value="See Json" />
